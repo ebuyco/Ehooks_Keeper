@@ -9,4 +9,3 @@ variables.env
 .env
 .yarn/
 dist/
-README.md
