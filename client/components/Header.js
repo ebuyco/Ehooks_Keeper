@@ -9,7 +9,7 @@ const Logo = styled.h1`
     position: relative;
     z-index: 2;
     transform: skew(-7deg);
-    a{
+    a {
         padding: 0.5rem 1rem;
         background: ${props => props.theme.red};
         color: white;
@@ -21,7 +21,7 @@ const Logo = styled.h1`
         text-align: center;
     }
     
-`
+`;
 
 const StyledHeader = styled.header`
         .bar {
@@ -46,7 +46,12 @@ const StyledHeader = styled.header`
 const Header = () => (
      <StyledHeader>
          <div className="bar">
-                    <a href="">Sick Fits</a>
+          <Logo>
+              <Link href="/">
+              <a href="">Sick Fits</a>
+              </Link>
+        </Logo>   
+                    
                     <Nav/>
          </div>
          <div className="sub-bar">
